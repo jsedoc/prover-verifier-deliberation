@@ -1,0 +1,22 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/reflexion.py  (reflection generation — critic)
+# Protocol:  Reflexion (Shinn et al. 2023)
+# Variables: {question}, {A}, {B}, {C}, {D}, {prev_answer}, {prev_reasoning}
+# Paper ref: Shinn et al. §3
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+You previously answered this question and your answer may be incorrect (two independent attempts gave different answers, indicating uncertainty).
+
+Question:
+{question}
+A) {A}
+B) {B}
+C) {C}
+D) {D}
+
+Your answer: {prev_answer}
+Your reasoning:
+{prev_reasoning}
+
+Reflect on what might have gone wrong. Write a short paragraph (3–5 sentences) identifying the specific step or assumption most likely to be incorrect, and what you should do differently on a new attempt.
+Reflection:

@@ -1,0 +1,1972 @@
+[
+  {
+    "question_num": "rec06pnAkLOr2t2mp",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec0Arme2jcXQZnAW",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec0VuKUjt1SZ7NYv",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec0wZvZgiz320KRs",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec0yTRmO1o1xCA6H",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec1oj2DveQWl9Rpw",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.5,
+    "full_consensus": false,
+    "ind_acc": 0.5
+  },
+  {
+    "question_num": "rec1zl5LvaatzGhFt",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec260hNUCEj109Dj",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec2UlKqC6RFHdcro",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec2ZTsqazBZ3LTWZ",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec2fsnzUuvNtUYK8",
+    "k": 8,
+    "target": "A",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 0.875,
+    "full_consensus": false,
+    "ind_acc": 0.125
+  },
+  {
+    "question_num": "rec32C1ZEapBnCC0E",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec47oNPXudlTIk4y",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec4JrWy7Il8ho5vk",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec4L69T0Y1AS4AFS",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec4UqStf9WUVif1f",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec4r4KWNLrT7g2kR",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec527dNeEtWJrYNl",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec5eA17Qr1ucNLUf",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec5rjeLsEq5Fg7Oj",
+    "k": 6,
+    "target": "C",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 0.8333333333333334,
+    "full_consensus": false,
+    "ind_acc": 0.16666666666666666
+  },
+  {
+    "question_num": "rec6sE2CRtD4drtHg",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec7C06XOB2h298ue",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec7qmSnbud4FHSqL",
+    "k": 8,
+    "target": "B",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 0.0
+  },
+  {
+    "question_num": "rec8nshandHARTkrg",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec8y3ZrBOcLgNEkE",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec9GugrngvsQR99A",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec9W28HgpEUeUN8k",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rec9ubQihAh6g9bft",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recA1i5ZAh0Uzclxp",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recAAJoHMW45Lv5je",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recAYkd96NNuNl1Ei",
+    "k": 8,
+    "target": "A",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 0.625,
+    "full_consensus": false,
+    "ind_acc": 0.0
+  },
+  {
+    "question_num": "recBGxVySx1pkrO1i",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recBXlqrZUCR897It",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recBhnXrUyTJ6WHIR",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recBtVK8rBVtIlXDq",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recCJJOeBGERaHYax",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recD8oX1KevFbl7bL",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recDDxpS9s8cwkqfq",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recDj2Y2BbtV02Wv5",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.875,
+    "full_consensus": false,
+    "ind_acc": 0.875
+  },
+  {
+    "question_num": "recDytVnNYZe2HuUU",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recE2ihVfqEK4R9d0",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recEmTBhx2hgw6tPQ",
+    "k": 7,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.7142857142857143,
+    "full_consensus": false,
+    "ind_acc": 0.7142857142857143
+  },
+  {
+    "question_num": "recFaL6j8UMhutXrc",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recG1ljJQcVy6CbSl",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recGFKDUd8qgz81Zl",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recGFNRVl1qBZGwyU",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recGee5m84dg5FZkc",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recHVUd2DkoKfedJZ",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recI1ls9OXdxatHQn",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recIDiDKKrN61Auyr",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recIIUynGGpsGEYuo",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recIMcQfaQNa6vzsT",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recINGR1z01Fh1Z3A",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recINSFEYLCyyd08m",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recIOlKBsOeEcgkA1",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recIj8lR4tuDgrHou",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recIlghoOw5VbY4Zh",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recJJcOHhFeSaRpl4",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recJZ3QEfRKjYw9a7",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recJpyGtGIsxulevT",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recK9F5aqdaybl8bb",
+    "k": 1,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recKcjTwONILZqHAX",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recKm6LNWykGapmCr",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recKv4hFyNpViUXnL",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recL9MFV5zmdlle5T",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recLAgwx9vbgB5EHk",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recLB0EkQ54bYVhnd",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recLSzwBUS3olCjhl",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recLrRirj7iXoB0rU",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recMicVBcqy1xM1jq",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.875,
+    "full_consensus": false,
+    "ind_acc": 0.875
+  },
+  {
+    "question_num": "recN4DY9Q5V03glmQ",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recNAiPUKOulQbKVP",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recNFJjE5PPTqVJGv",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recNu3MXkvWUzHZr9",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recNuT2oSnO86bxOx",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recO3hvCWRGiG0odN",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recOYsaYs6RmtlTDy",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recOkA2zsy4GSMD9R",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recOvqPKUtyy9ISA1",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recPIzpnuYpB4yvmp",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recPL4ZPpVYxgMu57",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recPSTGXK3P39yNYT",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recPzW1WqRnPs57D6",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recQ8oxSY2aCwFRS8",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recQiWOxhkXRz9NVE",
+    "k": 8,
+    "target": "A",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 0.875,
+    "full_consensus": false,
+    "ind_acc": 0.125
+  },
+  {
+    "question_num": "recRTiyaRymerDJ4y",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recRZjaElf8ft7xTq",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recReg13iV2HwJTaA",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recRgabRzMaEoBRcM",
+    "k": 5,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recRhwQwHijW0gCLo",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recS48OsU6kVadBPW",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recSBcGLPatKb3Ygu",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recTs7qzfJs6kfLUK",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recUBgVlkKzcRPDdK",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.875,
+    "full_consensus": false,
+    "ind_acc": 0.875
+  },
+  {
+    "question_num": "recUOePh79cp4T2Bg",
+    "k": 8,
+    "target": "A",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 0.0
+  },
+  {
+    "question_num": "recUc29lMDBEvurYo",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recV1nqYQvpII94oC",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recVE8cUNHpHZIAvL",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recVEXvhYxAhELVqB",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recVvpD8miVjmmyfe",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recWPMm91mGDLXONm",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recWXwn9v4IG9ZrM6",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recWzUUYBN0NuXO2k",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recXsYa3i2UhGF5fe",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recXsuOHRBLcyenF2",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recXvQ6gWAmyakrpD",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recYA3LPsCvF1fTMI",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.875,
+    "full_consensus": false,
+    "ind_acc": 0.875
+  },
+  {
+    "question_num": "recYCMJWH7IpcdqwE",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recYOzCsevNz61Lyn",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recYt8xx80OTyDsL0",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recZ13cwgDQf9jRd9",
+    "k": 2,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recZSGUkn56v9kEp1",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recZWeueB7lSPR6wN",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.75,
+    "full_consensus": false,
+    "ind_acc": 0.75
+  },
+  {
+    "question_num": "recZbxrocrxh9YENH",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recZdZxsN0AxDx0pB",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recZt4x514UQNnsgy",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reca44yABeO2fx7UB",
+    "k": 7,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.7142857142857143,
+    "full_consensus": false,
+    "ind_acc": 0.7142857142857143
+  },
+  {
+    "question_num": "recaXdGn3FAIkxLGM",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recafnH3RRnMBXEb1",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recakFKZioXUuldcd",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recatj4YXzbOaq3Ar",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recb2M22zaD3tL6Qc",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recb4cGsC6BJUCU3V",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recb80OwMgNnceA9t",
+    "k": 3,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reccOKzFNmyqeJ6ry",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reccVBrYdwsB84fGy",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reccVFW11Elovnf8T",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recclFbsjbaiVVnnV",
+    "k": 8,
+    "target": "C",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 0.0
+  },
+  {
+    "question_num": "recdya6FuYraBU5Rh",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "receYQxnUBvxPcvbQ",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "receo3UUzRvWCqyfA",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recf6ayQmL1SxKbvW",
+    "k": 8,
+    "target": "B",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 0.0
+  },
+  {
+    "question_num": "recfTlTMjZBuOducT",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recgC4GJ8wUemlUQD",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recgI6tUQ7RLJRWGx",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recgM7o1tcc7tP778",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recgXxEgllSGEpELP",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rechKl68Uc6H7vU0N",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rechgQucGlrnt8KRV",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rechtUKxC6G67H7Pr",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recihePFulRgNKsIn",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.75,
+    "full_consensus": false,
+    "ind_acc": 0.75
+  },
+  {
+    "question_num": "reciuppdQde4FGX1z",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recixxJmdux0d8LZQ",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recjJ54TXc04enRkZ",
+    "k": 8,
+    "target": "D",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 0.5,
+    "full_consensus": false,
+    "ind_acc": 0.5
+  },
+  {
+    "question_num": "recjgMJaMxz4ESDF2",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reck1zKeCssmN82Ga",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reck4G4xxv3YnpbtQ",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reckEnrOPFT9Ru7tW",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reckYqR92oJkqJXkE",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reckl6PkaEMWM50yZ",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recl1UtgTVKishAq4",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recmI7EiLv72PxmYK",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recmkvk6EFAmqyMxR",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recmwwQJnx7ll7bqL",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recn3NhOhqAPLda16",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recnGEpF1srQpaqWq",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recnTTKdBzfuoZ7w7",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recnawZPumSCLMVgp",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recnjViFrqlZNL3fY",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reco8WSc71p8zAv4q",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.625,
+    "full_consensus": false,
+    "ind_acc": 0.625
+  },
+  {
+    "question_num": "recoiTJPGUmzAkief",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recooG6bivTUJpDBz",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recoy9ZLBsc7HIRBy",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recpJmTOXx6T48nDJ",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recpki12iG9RUGrz9",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recqFDvYKKRmbnoUb",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recqGD3fxPCI59vPQ",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recqLRu4BcJvlSANc",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recr3VHM4zYf6dMFY",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recrHBEJJoDTV05JR",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recrNbtgTNoabJJi6",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recrs0kUo7Ua1xhKO",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recs3PLPUEMiqg4P8",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rect4iLrSfUwkNTno",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rectXfsCM1dj4Kv2c",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "rectlyG9pCAAuWhoB",
+    "k": 2,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.5,
+    "full_consensus": false,
+    "ind_acc": 0.5
+  },
+  {
+    "question_num": "recuYEkVjdVUwA3c0",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recuyeuT5rQ6qDt8F",
+    "k": 4,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.75,
+    "full_consensus": false,
+    "ind_acc": 0.75
+  },
+  {
+    "question_num": "recv7GsQg3f0fvB1f",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recvZlMbpPz0yLDle",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recvlnu8BuLmXZhSX",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recw4rROcnHKNZhtK",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recwW1A85nfyQpReG",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recwlwlcPvXVNPmvl",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recxTy0x7M6T9ikc0",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recxsX66ktJ1Lwt4f",
+    "k": 8,
+    "target": "A",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recyPffUDqC2k7ZZO",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recyl3usDqb7ruXJx",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recypVp2NmPlBKVTp",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recyrk6XBVwugG5u8",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recywRj5a8EEjj2Ib",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "recz3MfYHPRhsEQkW",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reczQ4I0VpENdMtIj",
+    "k": 8,
+    "target": "C",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.875,
+    "full_consensus": false,
+    "ind_acc": 0.875
+  },
+  {
+    "question_num": "reczUoM8JsxU6pYxr",
+    "k": 8,
+    "target": "B",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reczjcMtrB1YGS2fO",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 0.875,
+    "full_consensus": false,
+    "ind_acc": 0.875
+  },
+  {
+    "question_num": "reczkBiPPNrNN49Hp",
+    "k": 8,
+    "target": "D",
+    "mv_correct": true,
+    "sc_correct": true,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 1.0
+  },
+  {
+    "question_num": "reczzzihL7btBH7RO",
+    "k": 8,
+    "target": "B",
+    "mv_correct": false,
+    "sc_correct": false,
+    "agreement_rate": 1.0,
+    "full_consensus": true,
+    "ind_acc": 0.0
+  }
+]

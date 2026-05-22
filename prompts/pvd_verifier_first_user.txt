@@ -1,0 +1,15 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/pvd.py  (first user message to the verifier)
+# Protocol:  PVD — all variants
+# Variables: {question}, {prover_answer}, {prover_statement},
+#            {prover_subclaims_json}, {prover_reasoning}
+# Paper ref: §3.2
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+Question:
+{question}
+
+Prover chose: {prover_answer}
+Statement: {prover_statement}
+Sub-claims: {prover_subclaims_json}
+Reasoning: {prover_reasoning}

@@ -1,0 +1,27 @@
+# PVD — retry variant
+# Up to 5 attempts per question. Retry triggers on Reject or any answer change.
+# ANC = outcome=="accept_no_change" on any attempt; fallback = majority vote.
+run_key: pvd_retry
+description: "PVD+retry, Sonnet 4.6 / Haiku 4.5, max 5 attempts"
+
+dataset:
+  name: gpqa_diamond
+  n: 198
+  seed: 42
+
+protocol: pvd
+pvd:
+  prover_model: claude-sonnet-4-6
+  verifier_model: claude-haiku-4-5-20251001
+  thinking_budget_tokens: 0
+  fatigue_limit: 12
+  max_attempts: 5
+  min_challenges: 0
+  self_play: false
+
+logging:
+  verbose: true
+  output: data/gpqa_results_pvd_retry.json
+
+compute:
+  concurrent: 5

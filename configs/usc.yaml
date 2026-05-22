@@ -1,0 +1,23 @@
+# Universal Self-Consistency (Chen et al. 2024) — selector pass only.
+# Reuses the 8 candidate responses from data/gpqa_results_sc_epoch.json
+# (parsed from the Epoch AI .eval archive). Adds one Sonnet 4.6 selector
+# call per question to pick the most internally-consistent candidate.
+run_key: usc
+description: "USC selector over Epoch AI SC k=8 samples"
+
+dataset:
+  name: gpqa_diamond
+  n: 198
+  seed: 42
+
+protocol: usc
+usc:
+  model: claude-sonnet-4-6
+  sc_source: data/gpqa_results_sc_epoch.json
+
+logging:
+  verbose: true
+  output: data/gpqa_results_usc.json
+
+compute:
+  concurrent: 5

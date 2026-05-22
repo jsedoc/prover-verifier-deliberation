@@ -1,0 +1,23 @@
+# Single-call self-deliberation baseline.
+# One Sonnet 4.6 inference per question; the model alternates [PROVER] and
+# [VERIFIER] blocks within a single response, with the verifier forced to
+# challenge on round 1. ANC = final Accept + no answer changes.
+run_key: single_call
+description: "Single-call self-deliberation, Sonnet 4.6, fatigue=6"
+
+dataset:
+  name: gpqa_diamond
+  n: 198
+  seed: 42
+
+protocol: single_call
+single_call:
+  model: claude-sonnet-4-6
+  fatigue_limit: 6
+
+logging:
+  verbose: true
+  output: data/gpqa_results_single_call.json
+
+compute:
+  concurrent: 5

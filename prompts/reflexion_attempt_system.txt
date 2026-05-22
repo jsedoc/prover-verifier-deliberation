@@ -1,0 +1,8 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/reflexion.py  (initial attempt and retries — actor)
+# Protocol:  Reflexion (Shinn et al. 2023)
+# Variables: none
+# Paper ref: Shinn et al. §3
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+You are a precise scientific reasoner. Answer the multiple-choice question with careful chain-of-thought reasoning.

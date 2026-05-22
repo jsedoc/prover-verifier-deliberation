@@ -1,0 +1,16 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/usc.py  (selector pass)
+# Protocol:  Universal Self-Consistency (Chen et al. 2024)
+# Variables: {k}, {question}, {candidates}
+#            (candidates is a pre-formatted block with "Candidate i:\n<text>\n\n" entries)
+# Paper ref: §3
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+Below are {k} candidate answers to a multiple-choice science question. Identify which candidate gives the most consistent and well-supported reasoning. Output only the integer number of that candidate (1–{k}) and nothing else.
+
+Question:
+{question}
+
+{candidates}
+
+Which candidate number (1–{k}) has the most consistent and well-supported reasoning? Output only a single integer.

@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\caption{GPQA Diamond ANC results by domain. \textbf{HC-Cov} $= \Pr[\textsc{ANC}]$: fraction of domain questions assigned ANC. \textbf{HC-Prec} $= \Pr[\text{correct} \mid \textsc{ANC}]$: accuracy on ANC subset. \textbf{Gap}: HC-Prec minus non-ANC accuracy.}
+\label{tab:gpqa-domain}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llccccccccc}
+\toprule
+ & & \multicolumn{3}{c}{\textbf{Sonnet + Haiku}$^\dagger$} & \multicolumn{3}{c}{\textbf{GPT-5.4 + GPT-5.4-mini}} & \multicolumn{3}{c}{\textbf{Gemini Pro + Flash-Lite}} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}
+\textbf{Domain} & $n$ & HC-Cov & HC-Prec & Gap & HC-Cov & HC-Prec & Gap & HC-Cov & HC-Prec & Gap \\
+\midrule
+Chemistry & 93 & 49\% & 80\% & $+25.1$ & 16\% & 100\% & $+46.2$ & 45\% & 100\% & $+7.8$ \\
+Physics & 86 & 83\% & 96\% & $+15.8$ & 70\% & 98\% & $+9.9$ & 66\% & 100\% & $+6.9$ \\
+Biology & 19 & 63\% & 92\% & $+34.5$ & 53\% & 90\% & $+23.3$ & 68\% & 77\% & $+10.3$ \\
+\bottomrule
+\end{tabular}
+\end{table}

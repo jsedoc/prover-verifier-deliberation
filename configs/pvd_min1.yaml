@@ -1,0 +1,27 @@
+# PVD — min-1-challenge variant
+# Verifier must issue at least one Challenge before it can Accept.
+# Tests whether forced deliberation improves the precision/coverage trade-off.
+run_key: pvd_min1
+description: "PVD min-1 challenge, Sonnet 4.6 / Haiku 4.5, no retry"
+
+dataset:
+  name: gpqa_diamond
+  n: 198
+  seed: 42
+
+protocol: pvd
+pvd:
+  prover_model: claude-sonnet-4-6
+  verifier_model: claude-haiku-4-5-20251001
+  thinking_budget_tokens: 0
+  fatigue_limit: 12
+  max_attempts: 1
+  min_challenges: 1
+  self_play: false
+
+logging:
+  verbose: true
+  output: data/gpqa_results_pvd_min1.json
+
+compute:
+  concurrent: 5

@@ -1,0 +1,15 @@
+\begin{table}[h]
+\centering
+\caption{HLE ANC gap by model pairing. \textbf{HC-Cov} $= \Pr[\textsc{ANC}]$; \textbf{HC-Prec} $= \Pr[\text{correct} \mid \textsc{ANC}]$; \textbf{Gap}: HC-Prec minus non-ANC accuracy.}
+\label{tab:hle-capability}
+\small
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Prover} & \textbf{Verifier} & \textbf{Acc} & \textbf{HC-Cov} & \textbf{HC-Prec} & \textbf{Gap} \\
+\midrule
+Sonnet 4.6 & Haiku 4.5 & 20.1\% & 31\% & 15.2\% & $-7.1$ \\
+Opus 4.6 & Sonnet 4.6 & 40.0\% & 67\% & 41.4\% & $+4.3$ \\
+GPT-5.5 & Gemini 3.1 Pro & 45.6\% & 52\% & 59.0\% & $+27.9$ \\
+\bottomrule
+\end{tabular}
+\end{table}

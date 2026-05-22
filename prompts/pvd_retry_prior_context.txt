@@ -1,0 +1,15 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/pvd.py  (prefix injected before the question on retry attempts)
+# Protocol:  PVD — retry variant only
+# Variables: {num_prior_attempts}, {prior_summary}
+#            (prior_summary is built by rttr/pvd.py per attempt)
+# Paper ref: §3.3 "Retry-on-Uncertainty"
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+[PRIOR ATTEMPTS: You have already attempted this question {num_prior_attempts} time(s). Each attempt ended without a clean Accept+no-change result. Study what went wrong.]
+
+{prior_summary}
+[END OF PRIOR ATTEMPTS]
+
+For this new attempt: start fresh, pick the answer you are MOST confident in, and only commit if you can defend it without changing your mind.
+

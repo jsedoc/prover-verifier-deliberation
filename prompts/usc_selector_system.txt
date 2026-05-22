@@ -1,0 +1,8 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/usc.py  (selector pass)
+# Protocol:  Universal Self-Consistency (Chen et al. 2024)
+# Variables: none
+# Paper ref: §3
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+You are an expert scientific evaluator. Your task is to identify which of several candidate answers to a multiple-choice question is the most internally consistent and well-supported.

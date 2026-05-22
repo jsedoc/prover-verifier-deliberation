@@ -1,0 +1,6 @@
+anthropic>=0.84.0
+python-dotenv>=1.2.1
+datasets>=4.6.0
+matplotlib>=3.10.8
+numpy>=1.24
+scipy>=1.11

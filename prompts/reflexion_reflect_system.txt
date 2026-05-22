@@ -1,0 +1,8 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/reflexion.py  (reflection generation — critic)
+# Protocol:  Reflexion (Shinn et al. 2023)
+# Variables: none
+# Paper ref: Shinn et al. §3
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+You are a self-critical scientific reasoner reviewing your own potentially incorrect answer to a hard multiple-choice question.

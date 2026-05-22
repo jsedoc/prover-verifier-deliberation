@@ -1,0 +1,28 @@
+# PVD — standard variant
+# Sonnet 4.6 prover, Haiku 4.5 verifier, no extended thinking.
+# Single attempt per question, verifier may Accept on round 1.
+# This is the baseline PVD protocol.
+run_key: pvd_standard
+description: "PVD standard, Sonnet 4.6 / Haiku 4.5, no retry, no min-challenge"
+
+dataset:
+  name: gpqa_diamond
+  n: 198
+  seed: 42
+
+protocol: pvd
+pvd:
+  prover_model: claude-sonnet-4-6
+  verifier_model: claude-haiku-4-5-20251001
+  thinking_budget_tokens: 0
+  fatigue_limit: 12
+  max_attempts: 1
+  min_challenges: 0
+  self_play: false
+
+logging:
+  verbose: true
+  output: data/gpqa_results_pvd_standard.json
+
+compute:
+  concurrent: 5

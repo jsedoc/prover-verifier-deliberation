@@ -1,0 +1,5942 @@
+[
+  {
+    "question_num": 1,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 2,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "C",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "C",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": false,
+    "consensus_reached": false,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 3,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 4,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 5,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 6,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "D",
+        "D"
+      ],
+      [
+        "A",
+        "A",
+        "D"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": false,
+    "rounds_to_consensus": null,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 7,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 8,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 9,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "D",
+        "D"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 10,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "B",
+        "A"
+      ],
+      [
+        "B",
+        "A",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "A"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": false,
+    "consensus_reached": false,
+    "rounds_to_consensus": null,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 11,
+    "subdomain": "Electromagnetism and Photonics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 12,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "C",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 13,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 14,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 15,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 16,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 17,
+    "subdomain": "Optics and Acoustics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 18,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 19,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 20,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 21,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 22,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 23,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 24,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 25,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 26,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 27,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 28,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "B",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 29,
+    "subdomain": "Relativistic Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 30,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "D",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 31,
+    "subdomain": "Relativistic Mechanics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 32,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 33,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 34,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 35,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 36,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "B"
+      ],
+      [
+        "B",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 2,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 37,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 38,
+    "subdomain": "Electromagnetism and Photonics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 39,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 40,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 41,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 42,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 43,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "D"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 44,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 45,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 46,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 47,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 48,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 49,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "C",
+        "D"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 50,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 51,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 52,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 53,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 54,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 55,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 56,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 57,
+    "subdomain": "Electromagnetism and Photonics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 58,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 59,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 60,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 61,
+    "subdomain": "Relativistic Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 62,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 63,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 64,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 65,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 66,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 67,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 68,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 69,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 70,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 71,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 72,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 73,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 74,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 75,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 76,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 77,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 78,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 79,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 80,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 81,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "A",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "D"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": false,
+    "rounds_to_consensus": null,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 82,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 83,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "C",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 84,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 85,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 86,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 87,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 88,
+    "subdomain": "Inorganic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 89,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 90,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 91,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 92,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 93,
+    "subdomain": "Relativistic Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 94,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 95,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "D",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": false,
+    "rounds_to_consensus": null,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 96,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "A"
+      ],
+      [
+        "D",
+        "A",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 2,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 97,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 98,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "A",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 99,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 100,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 101,
+    "subdomain": "Condensed Matter Physics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 102,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "C"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 2,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 103,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 104,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 105,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 106,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 107,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 108,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 109,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 110,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 111,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 112,
+    "subdomain": "Electromagnetism and Photonics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 113,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 114,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 115,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 116,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 117,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 118,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 119,
+    "subdomain": "Electromagnetism and Photonics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 120,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 121,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 122,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 123,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 124,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 125,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 126,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "B",
+        "C"
+      ],
+      [
+        "D",
+        "C",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": false,
+    "consensus_reached": false,
+    "rounds_to_consensus": null,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 127,
+    "subdomain": "Genetics",
+    "domain": "Biology",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "C",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "A"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": false,
+    "consensus_reached": false,
+    "rounds_to_consensus": null,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 128,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 2,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 129,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "B",
+        "B"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 130,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 131,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "B"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 132,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 133,
+    "subdomain": "Relativistic Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 134,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 135,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 136,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "C",
+        "C"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 137,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 138,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "?",
+        "?",
+        "?"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 139,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 140,
+    "subdomain": "Genetics",
+    "domain": "Biology",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 141,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 142,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 143,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 144,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 145,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 146,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 147,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 148,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 149,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 150,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 151,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 152,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 153,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "D"
+      ],
+      [
+        "A",
+        "A",
+        "D"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 2,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 154,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 155,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 156,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "D",
+        "C"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 157,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 158,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 159,
+    "subdomain": "Chemistry (general)",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 160,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "D"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 161,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 162,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 163,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 164,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 165,
+    "subdomain": "Relativistic Mechanics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 166,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 167,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "D",
+        "B"
+      ],
+      [
+        "B",
+        "C",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "B"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": false,
+    "rounds_to_consensus": null,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 168,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 169,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 170,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "A",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 171,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 172,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 173,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 174,
+    "subdomain": "Electromagnetism and Photonics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 175,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 176,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 177,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 178,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 179,
+    "subdomain": "Relativistic Mechanics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 180,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 181,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 182,
+    "subdomain": "Genetics",
+    "domain": "Biology",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 183,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 184,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "B",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": false,
+    "consensus_reached": false,
+    "rounds_to_consensus": null,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 185,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 186,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 187,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "B"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 1,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 188,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 189,
+    "subdomain": "Molecular Biology",
+    "domain": "Biology",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 190,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 191,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 192,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 193,
+    "subdomain": "Quantum Mechanics",
+    "domain": "Physics",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 194,
+    "subdomain": "Physics (general)",
+    "domain": "Physics",
+    "correct_letter": "A",
+    "agent_answers_by_round": [
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "final_answer": "A",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 195,
+    "subdomain": "Organic Chemistry",
+    "domain": "Chemistry",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 196,
+    "subdomain": "High-energy particle physics",
+    "domain": "Physics",
+    "correct_letter": "C",
+    "agent_answers_by_round": [
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ],
+      [
+        "C",
+        "C",
+        "C"
+      ]
+    ],
+    "final_answer": "C",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 197,
+    "subdomain": "Genetics",
+    "domain": "Biology",
+    "correct_letter": "D",
+    "agent_answers_by_round": [
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "D",
+        "D",
+        "D"
+      ]
+    ],
+    "final_answer": "D",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  },
+  {
+    "question_num": 198,
+    "subdomain": "Astrophysics",
+    "domain": "Physics",
+    "correct_letter": "B",
+    "agent_answers_by_round": [
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "final_answer": "B",
+    "correct": true,
+    "consensus_reached": true,
+    "rounds_to_consensus": 0,
+    "num_agents": 3,
+    "num_rounds": 2,
+    "model": "claude-sonnet-4-6"
+  }
+]

@@ -1,0 +1,17 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/pvd.py  (user message to verifier after prover responds to a challenge)
+# Protocol:  PVD — all variants
+# Variables: {challenged_claim}, {prover_answer}, {prover_statement},
+#            {prover_subclaims_json}, {prover_reasoning},
+#            {round_num}, {fatigue_limit}
+# Paper ref: §3.2
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+Prover responded to challenge about "{challenged_claim}".
+
+Updated answer: {prover_answer}
+Statement: {prover_statement}
+Sub-claims: {prover_subclaims_json}
+Reasoning: {prover_reasoning}
+
+Round {round_num}/{fatigue_limit}. Accept, Reject, or Challenge.

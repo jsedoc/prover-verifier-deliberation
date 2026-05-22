@@ -1,0 +1,22 @@
+\begin{table}[h]
+\centering
+\caption{Clean RTTR runs on GPQA Diamond ($n{=}198$) with 95\% confidence intervals and a gap significance test. \textbf{Acc}, \textbf{HC-Cov}, and \textbf{HC-Prec} use Wilson score intervals; \textbf{Gap} (HC-Prec minus non-HC accuracy) uses a percentile bootstrap (10{,}000 resamples). \textbf{Gap $p$} is a two-sided Fisher's exact test of $H_0$: HC and non-HC subsets are equally accurate. A Gap CI excluding 0 (equivalently $p<0.05$) indicates the high-confidence subset is significantly more accurate than its complement. $^*$: SC with extended thinking (Epoch AI benchmark).}
+\label{tab:rttr-stats}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Run} & \textbf{Acc} & \textbf{HC-Cov} & \textbf{HC-Prec} & \textbf{Gap (95\% CI)} & \textbf{Gap $p$} \\
+\midrule
+PVD (standard) & 74.2 [67.7, 79.8] & 54.5 [47.6, 61.3] & 93.5 [87.2, 96.8] & +42.4 [+31.0, +53.5] & $<$0.001 \\
+PVD (min-1) & 76.3 [69.9, 81.7] & 51.0 [44.1, 57.9] & 91.1 [83.9, 95.2] & +30.3 [+18.9, +41.5] & $<$0.001 \\
+PVD (self-play) & 80.3 [74.2, 85.2] & 63.1 [56.2, 69.5] & 94.4 [88.9, 97.3] & +38.2 [+26.0, +50.4] & $<$0.001 \\
+PVD+retry & 79.8 [73.7, 84.8] & 79.8 [73.7, 84.8] & 88.6 [82.7, 92.7] & +43.6 [+27.2, +60.0] & $<$0.001 \\
+Debate (3$\times$2) & 83.3 [77.5, 87.9] & 95.5 [91.6, 97.6] & 85.7 [80.0, 90.0] & +52.4 [+17.4, +85.6] & $<$0.001 \\
+Reflexion & 82.3 [76.4, 87.0] & 92.9 [88.5, 95.7] & 82.6 [76.5, 87.4] & +4.0 [-17.7, +29.1] & 0.717 \\
+SC ($k{=}8$)$^*$ & 87.4 [82.0, 91.3] & 81.3 [75.3, 86.1] & 96.3 [92.1, 98.3] & +47.6 [+30.9, +64.1] & $<$0.001 \\
+USC ($k{=}8$) & 85.4 [79.8, 89.6] & 81.3 [75.3, 86.1] & 96.3 [92.1, 98.3] & +58.4 [+42.2, +74.1] & $<$0.001 \\
+Single-call PVD & 75.8 [69.3, 81.2] & 59.6 [52.6, 66.2] & 83.1 [75.3, 88.8] & +18.1 [+5.7, +30.7] & 0.004 \\
+\bottomrule
+\end{tabular}
+\end{table}

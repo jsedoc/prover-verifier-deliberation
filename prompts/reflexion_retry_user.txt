@@ -1,0 +1,18 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/reflexion.py  (retry attempt with reflection in context)
+# Protocol:  Reflexion (Shinn et al. 2023)
+# Variables: {reflections_block}, {question}, {A}, {B}, {C}, {D}
+# Paper ref: Shinn et al. §3
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+{reflections_block}
+Now, given the above reflection(s), please answer the question again carefully.
+
+{question}
+A) {A}
+B) {B}
+C) {C}
+D) {D}
+
+Think step-by-step, then state your final answer:
+Answer: X

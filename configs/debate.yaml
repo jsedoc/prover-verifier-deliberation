@@ -1,0 +1,25 @@
+# Multi-agent Debate (Du et al. 2024)
+# 3 agents × 2 rounds, no thinking, init temperature 1.0 (diversity),
+# debate temperature 0.0 (deterministic given peer context).
+run_key: debate
+description: "Multi-agent Debate, Sonnet 4.6, 3 agents × 2 rounds"
+
+dataset:
+  name: gpqa_diamond
+  n: 198
+  seed: 42
+
+protocol: debate
+debate:
+  model: claude-sonnet-4-6
+  num_agents: 3
+  num_rounds: 2
+  init_temp: 1.0
+  debate_temp: 0.0
+
+logging:
+  verbose: true
+  output: data/gpqa_results_debate.json
+
+compute:
+  concurrent: 5

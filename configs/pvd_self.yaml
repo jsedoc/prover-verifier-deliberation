@@ -1,0 +1,28 @@
+# PVD — self-play variant
+# Sonnet 4.6 plays both prover and verifier (verifier_model is overridden by
+# self_play=true). Min-1 challenge enforced. Tests whether heterogeneity
+# (prover != verifier) is required for the ANC signal to be informative.
+run_key: pvd_self
+description: "PVD self-play, Sonnet 4.6 / Sonnet 4.6, no retry, min-1 challenge"
+
+dataset:
+  name: gpqa_diamond
+  n: 198
+  seed: 42
+
+protocol: pvd
+pvd:
+  prover_model: claude-sonnet-4-6
+  verifier_model: claude-sonnet-4-6     # overridden by self_play below
+  thinking_budget_tokens: 0
+  fatigue_limit: 12
+  max_attempts: 1
+  min_challenges: 1
+  self_play: true
+
+logging:
+  verbose: true
+  output: data/gpqa_results_pvd_self.json
+
+compute:
+  concurrent: 5

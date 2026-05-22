@@ -1,0 +1,12 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/pvd.py  (user message to prover after a Challenge)
+# Protocol:  PVD — all variants
+# Variables: {challenged_claim}, {verifier_question}
+# Paper ref: §3.1
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+The verifier challenges: "{challenged_claim}"
+
+Verifier's question: {verifier_question}
+
+Justify this sub-claim more rigorously. Respond in full JSON format. You may revise your answer if you find an error.

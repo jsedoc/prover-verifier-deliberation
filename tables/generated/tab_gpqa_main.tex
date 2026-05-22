@@ -1,0 +1,31 @@
+\begin{table}[h]
+\centering
+\caption{GPQA Diamond results grouped by prover. \textbf{HC-Cov}: fraction of questions flagged high-confidence. \textbf{HC-Prec}: accuracy on that subset. \textbf{Gap}: HC-Prec minus accuracy on the complement. \textbf{Calls}: mean LLM calls per question. $^*$: SC with extended thinking (Epoch AI benchmark); not directly comparable to PVD runs (standard API). $\dagger$: challenge-first verifier prompt. $\ddagger$: HC coverage $>$90\%, leaving $n{<}20$ in the complement; gap estimate unreliable. }
+\label{tab:gpqa-main}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lllccccc}
+\toprule
+\textbf{Method} & \textbf{Verifier} & \textbf{HC Signal} & \textbf{Acc} & \textbf{HC-Cov} & \textbf{HC-Prec} & \textbf{Gap} & \textbf{Calls} \\
+\midrule
+\multicolumn{8}{l}{\textit{Sonnet 4.6 as prover}} \\
+Single-call PVD & Self & ANC & 78.8\% & 63\% & 83.9\% & $+13.6$ & 1 \\
+SC (k=8) & — & Full consensus & 83.3\% & 72\% & 91.5\% & $+29.0$ & 8 \\
+USC (k=8) & Sonnet 4.6 & Full consensus & 81.8\% & 72\% & 91.5\% & $+29.0$ & 9 \\
+Debate (3×2) & Sonnet 4.6 & Agent consensus & 83.3\% & 95\% & 85.7\% & $+52.4^{\ddagger}$ & 9 \\
+Reflexion & — & Stable, unchanged & 82.3\% & 93\% & 82.6\% & $+4.0^{\ddagger}$ & $\leq$5 \\
+PVD & Haiku 4.5 & ANC & 76.8\% & 77\% & 84.2\% & $+32.0$ & $\sim$3 \\
+PVD$^\dagger$ & Haiku 4.5 & ANC & 79.8\% & 65\% & 89.9\% & $+29.1$ & $\sim$6 \\
+\midrule
+\multicolumn{8}{l}{\textit{GPT-5.4 as prover}} \\
+Direct & — & — & 72.7\% & \textemdash & \textemdash & \textemdash & 1 \\
+SC$^*$ (k=8) & — & Full consensus & 94.9\% & 90\% & 97.2\% & $+23.5^{\ddagger}$ & 8 \\
+PVD & GPT-5.4-mini & ANC & 77.8\% & 43\% & 97.6\% & $+34.8$ & $\sim$3 \\
+\midrule
+\multicolumn{8}{l}{\textit{Gemini 3.1 Pro as prover}} \\
+SC$^*$ (k=8) & — & Full consensus & 93.9\% & 94\% & 97.3\% & $+60.9^{\ddagger}$ & 8 \\
+PVD & Flash-Lite & ANC & 94.4\% & 57\% & 97.3\% & $+6.6$ & $\sim$4 \\
+PVD+retry & GPT-5.5-pro & ANC & 92.9\% & 75\% & 97.3\% & $+17.3$ & $\sim$29 \\
+\bottomrule
+\end{tabular}
+\end{table}

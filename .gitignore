@@ -1,0 +1,55 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+*.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Run/build artifacts
+logs/
+/.claude/
+/.codex/
+# External Inspect AI logs; provenance is documented in README.md.
+/*.eval
+/gpqa_results*.json
+/hle_results*.json
+/paper.tex
+/neurips_paper.pdf
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.pdfsync
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

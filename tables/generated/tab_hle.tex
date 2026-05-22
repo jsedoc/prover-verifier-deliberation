@@ -1,0 +1,23 @@
+\begin{table}[h]
+\centering
+\caption{Humanity's Last Exam results (GPT-5.5 prover, Gemini 3.1 Pro verifier, $n{=}513$, $T{=}12$, $K{=}1$). Rows sorted by $n$. \textbf{HC-Cov} $= \Pr[\textsc{ANC}]$; \textbf{HC-Prec} $= \Pr[\text{correct} \mid \textsc{ANC}]$; \textbf{Gap}: HC-Prec minus non-ANC accuracy.}
+\label{tab:hle}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Domain} & $n$ & \textbf{Overall Acc} & \textbf{HC-Cov} & \textbf{HC-Prec} & \textbf{Non-ANC Acc} & \textbf{Gap} \\
+\midrule
+Biology / Medicine & 147 & 41\% & 46\% & 50.0\% & 32.9\% & $+17.1$ \\
+Math & 89 & 61\% & 67\% & 76.7\% & 27.6\% & $+49.1$ \\
+Humanities / Soc.\ Sci. & 79 & 51\% & 53\% & 61.9\% & 37.8\% & $+24.1$ \\
+Computer Science / AI & 66 & 52\% & 53\% & 68.6\% & 32.3\% & $+36.3$ \\
+Other & 44 & 32\% & 39\% & 52.9\% & 18.5\% & $+34.4$ \\
+Physics & 37 & 27\% & 57\% & 33.3\% & 18.8\% & $+14.6$ \\
+Chemistry & 26 & 46\% & 35\% & 77.8\% & 29.4\% & $+48.4$ \\
+Engineering & 25 & 40\% & 64\% & 31.2\% & 55.6\% & $-24.3$ \\
+\midrule
+\textbf{All} & \textbf{513} & \textbf{45.6\%} & \textbf{52\%} & \textbf{59.0\%} & \textbf{31.0\%} & $\mathbf{+27.9}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

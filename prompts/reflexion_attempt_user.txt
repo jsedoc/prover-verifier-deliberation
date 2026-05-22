@@ -1,0 +1,15 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/reflexion.py  (initial attempt and recheck — actor)
+# Protocol:  Reflexion (Shinn et al. 2023)
+# Variables: {question}, {A}, {B}, {C}, {D}
+# Paper ref: Shinn et al. §3
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+{question}
+A) {A}
+B) {B}
+C) {C}
+D) {D}
+
+Think step-by-step, then state your final answer as a single letter on the last line in the format:
+Answer: X

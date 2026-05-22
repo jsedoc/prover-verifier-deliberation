@@ -1,0 +1,22 @@
+# Reflexion (Shinn et al. 2023)
+# Self-consistency recheck is used as the proxy signal at inference time
+# (must not use the answer key). Max 5 trials per question.
+run_key: reflexion
+description: "Reflexion, Sonnet 4.6, max 5 trials"
+
+dataset:
+  name: gpqa_diamond
+  n: 198
+  seed: 42
+
+protocol: reflexion
+reflexion:
+  model: claude-sonnet-4-6
+  max_trials: 5
+
+logging:
+  verbose: true
+  output: data/gpqa_results_reflexion.json
+
+compute:
+  concurrent: 5

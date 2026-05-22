@@ -1,0 +1,12 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/debate.py  (rounds 1+: agent updates after seeing peers)
+# Protocol:  Multi-Agent Debate (Du et al. 2024)
+# Variables: {other_responses}
+# Paper ref: Du et al. appendix
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+These are the solutions to the problem from other agents:
+
+{other_responses}
+
+Using the reasoning from other agents as additional advice, can you give an updated answer? Examine your solution and that of the other agents. Put your answer in the form (X) at the end of your response.

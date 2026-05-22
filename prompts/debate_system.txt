@@ -1,0 +1,8 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/debate.py
+# Protocol:  Multi-Agent Debate (Du et al. 2024)
+# Variables: none
+# Paper ref: appendix
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+You are a precise scientific reasoner answering a multiple-choice science question.

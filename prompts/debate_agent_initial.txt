@@ -1,0 +1,16 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Used by:   rttr/debate.py  (round 0: each agent's independent first answer)
+# Protocol:  Multi-Agent Debate (Du et al. 2024)
+# Variables: {question}, {A}, {B}, {C}, {D}
+# Paper ref: Du et al. appendix; adapted for GPQA MCQ format
+# Last changed: 2026-05-16
+# ─────────────────────────────────────────────────────────────────────────────
+Can you answer the following question as accurately as possible?
+
+{question}
+A) {A}
+B) {B}
+C) {C}
+D) {D}
+
+Explain your answer, putting the answer in the form (X) at the end of your response.
