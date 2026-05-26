@@ -1,4 +1,4 @@
-# Trust but Verify: Prover-Verifier Deliberation for Selective LLM Prediction
+# [Trust but Verify: Prover-Verifier Deliberation for Selective LLM Prediction](https://arxiv.org/abs/2605.25133)
 
 I hit a very practical version of the selective-prediction problem:
 
@@ -55,7 +55,7 @@ the system retries, abstains, or escalates.
 
 ## Paper Summary
 
-The paper asks whether interactive proof structure can be used as a practical
+The [paper](https://arxiv.org/abs/2605.25133) asks whether interactive proof structure can be used as a practical
 calibration mechanism for frozen LLMs. Rather than trying to make model
 internals transparent, PVD tries to make the output verifiable through
 interaction.
@@ -107,6 +107,7 @@ The practical implications mirror the older interactive-proof motivation:
 - The verifier's competence is measurable: when the ANC gap collapses or
   inverts, the verifier is outside its effective region.
 
+https://arxiv.org/abs/2605.25133
 ## Topline Results
 
 All GPQA rows use GPQA Diamond. HC means "high confidence": ANC for PVD,
