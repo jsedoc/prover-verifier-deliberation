@@ -33,6 +33,10 @@ terms, it is a way to stop using frontier models as a blanket insurance policy.
 The reusable Claude Code skill lives at `skills/prover-verifier-code/`.
 
 ```bash
+npx skills add jsedoc/prover-verifier-deliberation --skill "prover-verifier-code" -a claude-code
+```
+or you can git clone the repo and install
+```bash
 ./skills/install.sh prover-verifier-code --global
 ```
 
@@ -325,3 +329,13 @@ https://logs.epoch.ai/inspect_ai_logs/fFatyce8UvpN7ZivdmrhAy.eval
 
 The generated paper tables use parsed JSON summaries rather than committing the
 raw `.eval` log.
+
+## Citation
+```bibtex
+@article{sedoc2026trust,
+  title={Trust but Verify: Prover-Verifier Deliberation for Selective LLM Prediction},
+  author={Sedoc, João and Zhang, Baotong and Foster, Dean},
+  journal={arXiv preprint 	arXiv:2605.25133},
+  year={2026}
+}
+```
