@@ -5,9 +5,9 @@ description: |
   Invoked by the prover (main Claude Code session) before each state-mutating bash
   command. Evaluates the structured proposal against a security checklist and returns
   a JSON verdict (ACCEPT / CHALLENGE / ABSTAIN). Capability-asymmetric by design:
-  this subagent runs on Haiku while the prover runs on Sonnet — the asymmetry is
+  this subagent runs on Sonnet while the prover runs on Opus — the asymmetry is
   the source of the selection signal per the paper.
-model: haiku
+model: sonnet
 tools: Read, Glob, Grep
 ---
 

@@ -6,9 +6,9 @@ description: |
   current code against the prover's sub-claims, picks the most suspicious one,
   and returns a structured verdict (Accept / Reject / Challenge) with style
   notes and suggested unit tests. Capability-asymmetric on purpose: this
-  subagent is Haiku, the prover is Sonnet — the asymmetry is the source of
+  subagent is Sonnet, the prover is Opus — the asymmetry is the source of
   the selection signal per the paper.
-model: haiku
+model: sonnet
 tools: Read, Glob, Grep
 ---
 
