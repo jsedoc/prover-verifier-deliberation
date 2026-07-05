@@ -2,12 +2,12 @@
 name: prover-verifier-code
 description: |
   Apply the Prover–Verifier Deliberation (PVD) protocol from the paper to every
-  non-trivial piece of code you write or modify. You are the Prover (Sonnet 4.6
+  non-trivial piece of code you write or modify. You are the Prover (Opus 4.8
   with high reasoning); delegate to the bundled `pvd-verifier` subagent
-  (Haiku 4.5, read-only) to challenge questionable code, comment on minimality
+  (Sonnet 5, read-only) to challenge questionable code, comment on minimality
   and complexity, and propose unit tests. Iterate up to 12 rounds (fatigue
   limit); if no ANC (Accept + No Change) verdict is reached, escalate to the
-  bundled `pvd-opus-escalator` subagent (Opus 4.7, extra high) for a fresh
+  bundled `pvd-opus-escalator` subagent (Fable 5, extra high) for a fresh
   design pass.
 
   Trigger this skill whenever you are about to write or substantially modify
@@ -21,12 +21,13 @@ description: |
 
 # Prover–Verifier Deliberation for Code
 
-You are the **Prover** (main Claude Code session, Sonnet 4.6, high reasoning).
+You are the **Prover** (main Claude Code session, Opus 4.8, high reasoning).
 After producing or modifying code, run the following loop until ANC or
 fatigue.
 
 > **Prerequisite.** This skill invokes two subagents by name: `pvd-verifier`
-> (Haiku, read-only) and `pvd-opus-escalator` (Opus, write). They ship
+> (Sonnet, read-only) and `pvd-opus-escalator` (Fable, write — the "opus" in
+> the name is historical; the agent now runs on Fable). They ship
 > alongside this SKILL.md under `agents/`. If `/agents` does not list them,
 > the install was incomplete — run `./skills/install.sh prover-verifier-code`
 > from the source repo before continuing.
@@ -38,7 +39,7 @@ fatigue.
   This is the success condition. ANC is the same notion as in the paper.
 - **Fatigue limit = 12** — maximum prover↔verifier rounds per code change.
 - **Escalation** — on fatigue (or persistent `Reject`), hand the full
-  transcript to the Opus subagent for a fresh design.
+  transcript to the Fable subagent for a fresh design.
 
 ## Protocol
 
@@ -132,7 +133,7 @@ Parse it. Then:
   - After 3 consecutive `Reject` verdicts, escalate regardless of round
     count.
 
-### Step 4 — Escalate to Opus
+### Step 4 — Escalate to Fable
 
 On fatigue (k > 12) or 3 consecutive Rejects:
 
@@ -159,12 +160,12 @@ Outstanding verifier challenges (last 3):
 <challenge, with which sub-claim each was targeting>
 ```
 
-The Opus subagent will either (a) write a redesign itself with Edit/Write, or
+The Fable subagent will either (a) write a redesign itself with Edit/Write, or
 (b) recommend a re-scope. Its system prompt (in
 `agents/pvd-opus-escalator.md`) handles the choice.
 
 After it returns:
-- If (a): the diff is already applied. **Do not re-verify** — Opus's
+- If (a): the diff is already applied. **Do not re-verify** — Fable's
   authority overrides this round of PVD (otherwise we'd loop forever). Run
   the test suite to confirm nothing broke.
 - If (b): pause work, surface the re-scope recommendation to the user, and
@@ -176,7 +177,7 @@ When the loop terminates (ANC or escalation), summarise to the user in the
 final response. Keep it under 6 lines:
 
 ```
-PVD: <ANC at round k | escalated to Opus at round 12 | rescoped>
+PVD: <ANC at round k | escalated to Fable at round 12 | rescoped>
 Rounds used: k of 12
 Challenges addressed: <one-line per round that mattered>
 Unit tests added: <list test names>
@@ -197,8 +198,8 @@ without the loop.
 ## Cost note
 
 This protocol multiplies API cost by roughly 2× to 6× depending on rounds
-reached. Average expected cost on typical edits is ~1.5–3 rounds, ~5–15
-cents per change. Fatigue + Opus escalation can run $1–3. If the user
+reached. Average expected cost on typical edits is ~1.5–3 rounds, ~15–40
+cents per change. Fatigue + Fable escalation can run $2–6. If the user
 appears budget-sensitive (e.g. mentioned cost recently), prefer fewer
 rounds or skip on borderline cases.
 
@@ -212,6 +213,6 @@ retry/escalation pattern all match the protocol used to evaluate GPQA
 Diamond. The adaptation to code: sub-claims become claims about
 *correctness*, *minimality*, and *test coverage* rather than about
 reasoning steps in a multiple-choice answer. The cross-family pairing
-(Sonnet ↔ Haiku, escalate to Opus) follows the paper's finding that
+(Opus ↔ Sonnet, escalate to Fable) follows the paper's finding that
 capability-asymmetric prover/verifier pairings give the strongest
 selection signal.

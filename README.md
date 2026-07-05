@@ -40,8 +40,8 @@ It installs the skill plus two bundled subagents:
 
 | Agent | Role |
 |---|---|
-| `pvd-verifier` | Haiku, read-only challenge reviewer. |
-| `pvd-opus-escalator` | Opus, write-capable escalation reviewer. |
+| `pvd-verifier` | Sonnet, read-only challenge reviewer. |
+| `pvd-opus-escalator` | Fable, write-capable escalation reviewer (the "opus" in the name is historical). |
 
 The skill asks the prover to make claims about its own patch, then asks the
 verifier to attack the weakest claim. The useful operating point is ANC:

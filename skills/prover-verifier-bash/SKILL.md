@@ -1,6 +1,6 @@
 ---
 name: prover-verifier-bash
-description: Gate bash command execution through a Prover-Verifier-Decoder (PVD) protocol with retry and human escalation. Use this whenever Claude is about to run a non-trivial bash command — anything that writes to disk, mutates state, installs packages, hits the network, runs git operations, or could be destructive. Claude generates a structured proposal (command, context, intent, expected outcome, blast radius), an independent Haiku verifier subagent challenges it, and execution only proceeds when Accept-with-No-Challenge (ANC) is reached. On challenge, retry with refined justification up to twice; if ANC is still not reached, escalate to the human with the full transcript. Trigger this for `pip install`, `npm install`, `git push`, `rm`, `mv`, `cp`, `curl`, `wget`, redirects (`>`, `>>`), `chmod`, `sudo`, scripts touching `/mnt/user-data/` outside the sandbox, and any command whose effect Claude cannot fully predict. Skip only for pure-read inspection like `ls`, `pwd`, `cat`, `head`, `grep`, `which`, `echo $VAR`.
+description: Gate bash command execution through a Prover-Verifier-Decoder (PVD) protocol with retry and human escalation. Use this whenever Claude is about to run a non-trivial bash command — anything that writes to disk, mutates state, installs packages, hits the network, runs git operations, or could be destructive. Claude generates a structured proposal (command, context, intent, expected outcome, blast radius), an independent Sonnet verifier subagent challenges it, and execution only proceeds when Accept-with-No-Challenge (ANC) is reached. On challenge, retry with refined justification up to twice; if ANC is still not reached, escalate to the human with the full transcript. Trigger this for `pip install`, `npm install`, `git push`, `rm`, `mv`, `cp`, `curl`, `wget`, redirects (`>`, `>>`), `chmod`, `sudo`, scripts touching `/mnt/user-data/` outside the sandbox, and any command whose effect Claude cannot fully predict. Skip only for pure-read inspection like `ls`, `pwd`, `cat`, `head`, `grep`, `which`, `echo $VAR`.
 ---
 
 # Prover-Verifier-Bash: Prover-Verifier-Decoder Gating for Bash Execution
@@ -11,7 +11,7 @@ This skill operationalizes the **Challenge Decoding** protocol (Sedoc et al., +3
 
 The terminal state of the protocol is **ANC (Accept, No Challenge)**: the verifier examined the prover's proposal and declined to challenge it. Only ANC permits execution. Anything else either triggers a retry or escalates to the human.
 
-> **Prerequisite.** This skill invokes the `pvd-bash-verifier` subagent (Haiku, read-only). It ships alongside this SKILL.md under `agents/`. If `/agents` does not list it, the install was incomplete — run `./skills/install.sh prover-verifier-bash` from the source repo before continuing.
+> **Prerequisite.** This skill invokes the `pvd-bash-verifier` subagent (Sonnet, read-only). It ships alongside this SKILL.md under `agents/`. If `/agents` does not list it, the install was incomplete — run `./skills/install.sh prover-verifier-bash` from the source repo before continuing.
 
 ## When to run the full protocol (vs. the fast path)
 
@@ -191,7 +191,7 @@ Three CHALLENGE verdicts in a row on a `git push --force` to `main`. Stop, prese
 
 ## Bias correction notes
 
-- **Verifier sycophancy.** The Haiku verifier is deliberately less capable than the Sonnet prover — the capability gap is the source of the selection signal. If you notice the verifier ACCEPTing every proposal without challenge, something is wrong; surface it.
+- **Verifier sycophancy.** The Sonnet verifier is deliberately less capable than the Opus prover — the capability gap is the source of the selection signal. If you notice the verifier ACCEPTing every proposal without challenge, something is wrong; surface it.
 - **Prover capitulation.** On retry, do not just reword the proposal without changing the command. The revision must materially address the `suggested_revision`.
 - **Abstain inflation.** ABSTAIN exists for genuine uncertainty about command behavior, not for user-intent ambiguity. If the intent is unclear, ask the user directly before starting the protocol.
 

@@ -8,8 +8,8 @@ depend on, authored as part of this project.
 
 | Skill | What it does | When it triggers |
 |---|---|---|
-| [`prover-verifier-code`](prover-verifier-code/SKILL.md) | Runs the paper's Prover–Verifier Deliberation protocol on code you're about to write. The prover (main session, Sonnet 4.6) spawns a Haiku 4.5 verifier subagent for up to 12 rounds; on fatigue it escalates to Opus 4.7. | Whenever Claude is about to write or substantially modify code (≥10 LOC, non-trivial). Skips docs, renames, formatting. |
-| [`prover-verifier-bash`](prover-verifier-bash/SKILL.md) | Gates state-mutating shell commands through the PVD protocol. The prover proposes a structured JSON verdict (ACCEPT / CHALLENGE / ABSTAIN); a capability-asymmetric Haiku verifier subagent evaluates it against a security checklist before execution proceeds. | Before any bash command that creates, deletes, overwrites, or otherwise mutates system state. Read-only commands are passed through. |
+| [`prover-verifier-code`](prover-verifier-code/SKILL.md) | Runs the paper's Prover–Verifier Deliberation protocol on code you're about to write. The prover (main session, Opus 4.8) spawns a Sonnet 5 verifier subagent for up to 12 rounds; on fatigue it escalates to Fable 5. | Whenever Claude is about to write or substantially modify code (≥10 LOC, non-trivial). Skips docs, renames, formatting. |
+| [`prover-verifier-bash`](prover-verifier-bash/SKILL.md) | Gates state-mutating shell commands through the PVD protocol. The prover proposes a structured JSON verdict (ACCEPT / CHALLENGE / ABSTAIN); a capability-asymmetric Sonnet verifier subagent evaluates it against a security checklist before execution proceeds. | Before any bash command that creates, deletes, overwrites, or otherwise mutates system state. Read-only commands are passed through. |
 
 ## Layout of a skill in this repo
 
@@ -129,7 +129,7 @@ list. Confirm with `/skills`; the subagents show up under `/agents`.
    ---
    name: agent-name
    description: When the main agent should delegate to this subagent.
-   model: haiku                       # or sonnet, opus
+   model: sonnet                      # or haiku, opus, fable
    tools: Read, Glob, Grep            # omit Write/Edit for read-only roles
    ---
 
