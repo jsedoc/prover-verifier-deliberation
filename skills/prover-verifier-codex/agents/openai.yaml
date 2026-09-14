@@ -1,0 +1,6 @@
+interface:
+  display_name: "PVD for Codex"
+  short_description: "Sol prover, GPT-5.5 verifier, Astra escalation"
+  default_prompt: "Use $prover-verifier-codex to implement and verify this code change."
+policy:
+  allow_implicit_invocation: true
