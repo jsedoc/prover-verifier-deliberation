@@ -1,0 +1,37 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aldana(1998)]{aldana1998}
+Rosa Aldana.
+\newblock Optimal rejection rules for classifiers with a reject option.
+\newblock \emph{Journal of Pattern Decisions}, 12\penalty0 (3):\penalty0
+  45--61, 1998.
+
+\bibitem[Ito and Brandt(2020)]{ito2020}
+Haruto Ito and Sofia Brandt.
+\newblock Learning to abstain in extractive question answering.
+\newblock In \emph{Findings of the Conference on Fictional NLP}, 2020.
+
+\bibitem[Lee et~al.(2021)Lee, Kim, and Ortiz]{lee2021}
+Jae Lee, Min Kim, and Ana Ortiz.
+\newblock Verbalized confidence and overconfidence in question answering
+  models.
+\newblock In \emph{Proceedings of the Imaginary Workshop on Model Confidence},
+  2021.
+
+\bibitem[Okafor(2019)]{okafor2019}
+Chidi Okafor.
+\newblock On measuring calibration error.
+\newblock \emph{Transactions on Imaginary Machine Learning}, 2019.
+
+\bibitem[Park and G{\'o}mez(2022)]{park2022}
+Seo-yeon Park and Luis G{\'o}mez.
+\newblock Sampling temperature and calibration in generative question
+  answering, 2022.
+\newblock Fictional preprint.
+
+\end{thebibliography}
