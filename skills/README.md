@@ -10,6 +10,7 @@ depend on, authored as part of this project.
 |---|---|---|
 | [`prover-verifier-code`](prover-verifier-code/SKILL.md) | Runs the paper's Prover–Verifier Deliberation protocol on code you're about to write. The prover (main session, Sonnet 4.6) spawns a Haiku 4.5 verifier subagent for up to 12 rounds; on fatigue it escalates to Opus 4.7. | Whenever Claude is about to write or substantially modify code (≥10 LOC, non-trivial). Skips docs, renames, formatting. |
 | [`prover-verifier-bash`](prover-verifier-bash/SKILL.md) | Gates state-mutating shell commands through the PVD protocol. The prover proposes a structured JSON verdict (ACCEPT / CHALLENGE / ABSTAIN); a capability-asymmetric Haiku verifier subagent evaluates it against a security checklist before execution proceeds. | Before any bash command that creates, deletes, overwrites, or otherwise mutates system state. Read-only commands are passed through. |
+| [`prover-verifier-paper`](prover-verifier-paper/SKILL.md) | Audits a paper's claims with PVD. A decomposer extracts verbatim-anchored claims (results, statistics, "X et al. showed" attributions, "we test H using Y" claims, novelty, generalization, causal); a prover must anchor each in the paper, its cited sources or recomputed statistics; a Sonnet verifier challenges the support until Accept or Reject; an Opus adjudicator settles Reject/fatigue. A ledger script refuses unverifiable quotes and re-runs every check. Writes a severity-ranked report of unsupported claims, overclaims (with the supported version), contradictions and miscitations. | When asked to fact-check, claim-check or self-audit a paper (arXiv id, PDF, or LaTeX source). |
 
 ## Layout of a skill in this repo
 
@@ -29,6 +30,13 @@ skills/prover-verifier-bash/
 │   └── protocol.md       # security-checklist the verifier applies
 └── agents/
     └── pvd-bash-verifier.md
+
+skills/prover-verifier-paper/
+├── SKILL.md              # orchestration: ingest → decompose → prove → deliberate → report
+├── agents/               # decomposer, prover, verifier (Sonnet), adjudicator (Opus)
+├── references/           # per-claim-type checklists; mapping to the paper's protocol
+├── scripts/              # ingest, refs, ledger (the referee), check_numbers, reports; stdlib only
+└── evals/                # a fictional paper with planted defects and an answer key
 ```
 
 Claude Code looks for skills under `~/.claude/skills/` (or `.claude/skills/`)
@@ -62,6 +70,7 @@ Or install individually:
 ```bash
 ./skills/install.sh prover-verifier-code --global   # code-writing gate
 ./skills/install.sh prover-verifier-bash --global   # bash-execution gate
+./skills/install.sh prover-verifier-paper --global  # paper-claim audit
 ```
 
 Or by hand (example for `prover-verifier-code`):

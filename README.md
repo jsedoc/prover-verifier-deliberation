@@ -53,6 +53,24 @@ Accept + No Change. If the verifier accepts and the prover does not need to
 revise the answer or patch, the work is treated as high confidence. Otherwise
 the system retries, abstains, or escalates.
 
+### Paper-claim audit skill
+
+`skills/prover-verifier-paper/` applies the same protocol to the claims of a
+paper. A decomposer turns the paper into verbatim-anchored claims; a prover must
+defend each one from the paper's own results, its cited sources, or recomputed
+statistics, and flags what it cannot defend (unsupported), what it can defend
+only in weaker form (overclaim, with the supported version), and what the
+evidence refutes (contradicted); a verifier that sees only the prover's
+structured output challenges the weakest sub-claim until Accept or Reject. A
+ledger script refuses any quote that does not occur verbatim in the files and
+re-runs every numeric check, so evidence cannot be fabricated.
+
+```bash
+./skills/install.sh prover-verifier-paper --global
+# then, in Claude Code:
+/prover-verifier-paper 2605.25133
+```
+
 ## Paper Summary
 
 The [paper](https://arxiv.org/abs/2605.25133) asks whether interactive proof structure can be used as a practical

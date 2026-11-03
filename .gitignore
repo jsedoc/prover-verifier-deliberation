@@ -26,6 +26,7 @@ env/
 
 # Run/build artifacts
 logs/
+pvd-audit/
 /.claude/
 /.codex/
 # External Inspect AI logs; provenance is documented in README.md.
