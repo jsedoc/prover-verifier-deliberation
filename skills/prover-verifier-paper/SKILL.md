@@ -90,14 +90,9 @@ files (the skill folder, or the plugin root when installed as a plugin).
 
 For a paper.md over about 4,000 lines, split the work: one decomposer for the abstract,
 introduction and conclusion plus the sections they summarise, others for remaining section ranges,
-each writing its own file with its own id range (C1–C199, C200–C399, …). Then initialise the
-ledger with the options you settled:
-
-```
-python3 ${CLAUDE_SKILL_DIR}/scripts/ledger.py init --audit <audit> --claims <audit>/claims.json [options]
-```
-
-Give the user the claim count by type and tier in one or two lines.
+each writing its own file with its own id range (C1–C199, C200–C399, …). The decomposer validates
+its file with `ledger.py init --dry-run`; give the user the claim count by type and tier in one or
+two lines.
 
 ### 4. Fetch cited sources
 
@@ -113,7 +108,24 @@ would close the gap, then carry on: those claims end as `unverifiable`, never as
 the paper. If the shell cannot reach the network, say so; WebFetch output is a model's summary and
 must not stand in for a source's verbatim text.
 
-### 5. Deliberate
+### 5. Initialise the ledger
+
+```
+python3 ${CLAUDE_SKILL_DIR}/scripts/ledger.py init --audit <audit> --claims <audit>/claims.json [options]
+```
+
+Each batch of six claims costs one prover call and one to three verifier calls per round, and on a
+long paper every agent reads a lot of text, so a paper with more than about 60 claims is a long,
+expensive run. Unless the user asked for every claim, audit the riskiest first: `--max-claims N`
+takes claims in priority order (headline claims, including claims restated in the abstract or
+conclusion; then statistical, test, causal, generalization, novelty, theoretical, comparison and
+attribution claims; then results and methods; background last). When the cited sources could not
+be retrieved, `--skip-types attribution` leaves attribution claims out instead of spending batches
+to label them unverifiable. Tell the user what the run covers; `ledger.py include --audit <audit>
+(--all-skipped | --types attribution | --ids C5,C9)` adds skipped claims later, for example once the
+user supplies the missing sources.
+
+### 6. Deliberate
 
 Repeat until the ledger says COMPLETE:
 
@@ -144,7 +156,7 @@ reports packets that are already out as "in progress" and never issues them twic
 - Do not read packets or the paper in full yourself, and do not rule on claims: independence
   between the roles is what makes the verdicts mean something.
 
-### 6. Report
+### 7. Report
 
 ```
 python3 ${CLAUDE_SKILL_DIR}/scripts/render_report.py --audit <audit> --models "prover=<model>, verifier=<model>, adjudicator=<model>"
@@ -166,6 +178,7 @@ external search.
 | `--challenge-first` | `headline,flags` | claims that need at least one Challenge before Accept: `headline`, `flags` (any overclaim, unsupported or contradicted position), `all`, or `none` |
 | `--batch-size` | 6 | claims per prover/verifier batch |
 | `--max-claims N` | all | audit only the N highest-priority claims (headline first); the rest are listed as not audited |
+| `--skip-types T,…` | none | leave these claim types out for now (for example `attribution` when the cited sources are unavailable); `include` adds them later |
 | `--external-search` | off | let the prover search the web for novelty claims and save what it cites |
 
 ## Without subagents

@@ -149,12 +149,15 @@ def main():
         integrity.append({"line": line, "reason": "noted by decomposer", "text": x.get("note", "")})
         seen_lines.add(line)
     unverifiable = [r for r in rows if r["label"] == "unverifiable" and not r["restates"]]
-    unresolved = [r for r in rows if r["label"] in ("unresolved", "not audited") and not r["restates"]]
+    not_audited = [r for r in rows if r["label"] == "not audited" and not r["restates"]]
+    still_open = [r for r in rows if r["label"] == "unresolved" and not r["restates"]]
+    cfg = L.get("config", {})
 
     title = L["paper"].get("title") or meta.get("title") or audit.name
     md = [f"# Claim audit: {title}", ""]
     src = L["paper"].get("arxiv_id") and f"arXiv:{L['paper']['arxiv_id']}" or L["paper"].get("source") or ""
     md.append(f"{src} · audited {now_iso()[:10]} · {len(claims)} claims extracted"
+              + (f", {len(audited)} audited" if not_audited else "")
               + (f" · {ns.models}" if ns.models else ""))
     md.append("")
     md.append("## Summary")
@@ -172,14 +175,17 @@ def main():
     if unverifiable:
         md.append(f"- **{len(unverifiable)} unverifiable** with the sources available (audit gap, not a finding "
                   f"against the paper)")
-    if unresolved:
-        md.append(f"- **{len(unresolved)} not resolved** (skipped or still open)")
+    if not_audited:
+        md.append(f"- **{len(not_audited)} not audited** in this run: outside its focus, not a finding either way "
+                  f"(see Audit gaps)")
+    if still_open:
+        md.append(f"- **{len(still_open)} not resolved** (still open when this report was written)")
     if linked_to:
         md.append(f"- {sum(len(v) for v in linked_to.values())} restatement(s) inherit the verdict of the claim they "
                   f"repeat")
     if integrity:
-        md.append(f"- **Integrity: {len(integrity)} passage(s)** look like hidden or embedded instructions to "
-                  f"reviewers or AI systems (see below)")
+        md.append(f"- **Integrity: {len(integrity)} passage(s)** hidden from readers or addressed to reviewers or "
+                  f"AI systems (see below)")
     md.append(f"- PVD: {anc}/{len(audited)} audited claims reached Accept + No Change; "
               f"mean verifier turns {sum(turns) / len(turns):.1f}" if turns else
               f"- PVD: {anc}/{len(audited)} audited claims reached Accept + No Change")
@@ -233,14 +239,27 @@ def main():
                   f"{CONF_TEXT.get(r['confidence'], r['confidence'] or '')} | {r['path'] if not r['restates'] else ''} |")
     md.append("")
 
-    if unverifiable or unresolved:
+    if unverifiable or not_audited or still_open:
         md += ["## Audit gaps", ""]
         for r in unverifiable:
             c = claims[r["id"]]
             why = (c.get("adjudication") or {}).get("rationale") or (c["proofs"][-1]["statement"] if c["proofs"] else "")
             md.append(f"- {r['id']} ({r['loc']}): unverifiable — {short(why, 260)}")
-        for r in unresolved:
-            md.append(f"- {r['id']} ({r['loc']}): {r['label']}")
+        for r in still_open:
+            md.append(f"- {r['id']} ({r['loc']}): still open")
+        groups = {}
+        for r in not_audited:
+            groups.setdefault(claims[r["id"]].get("skip_reason") or "max_claims", []).append(r)
+        for reason, rs in sorted(groups.items()):
+            types = {}
+            for r in rs:
+                types[r["type"]] = types.get(r["type"], 0) + 1
+            what = (f"claim types left out of this run ({', '.join(cfg.get('skip_types') or [])})" if reason == "type"
+                    else f"below this run's cut of {cfg.get('max_claims')} highest-priority claims" if cfg.get("max_claims")
+                    else "outside this run's focus")
+            md.append(f"- Not audited, {what}: {len(rs)} claims ("
+                      + ", ".join(f"{v} {k}" for k, v in sorted(types.items(), key=lambda x: -x[1]))
+                      + "), marked *not audited* in the table above. `ledger.py include` adds them to the audit.")
         missing = [k for k, v in sources.items() if v.get("coverage") == "unavailable"]
         if missing:
             md.append(f"- Cited sources that could not be retrieved: {', '.join(missing)}. Supplying their PDFs "

@@ -14,6 +14,7 @@ Reject, ANC, fatigue, challenge-first policy), and writes a self-contained packe
   status  --audit DIR [--json]
   show    --audit DIR --id C01             full transcript of one claim
   abandon --audit DIR --id C01 --reason R  close a claim an agent could not finish (unverifiable)
+  include --audit DIR (--all-skipped | --ids C5,C9 | --types result,method)   audit claims init skipped
   roles                                    print the four role-prompt files for this install
 
 Exit status of submit is 1 when anything was refused, so agents notice and fix it.
@@ -237,8 +238,10 @@ def min_challenges(L: dict, c: dict, position: str) -> int:
     policy = L["config"]["challenge_first"]
     if "all" in policy:
         return 1
+    gap = position == "cannot_prove" and (c["proofs"][-1].get("blocker") if c["proofs"] else None) in \
+        ("source_unavailable", "needs_external")
     need = ("headline" in policy and c["claim"]["tier"] == "headline") or \
-           ("flags" in policy and position in FLAG_POSITIONS)
+           ("flags" in policy and position in FLAG_POSITIONS and not gap)
     return 1 if need else 0
 
 
@@ -334,10 +337,16 @@ def validate_claims(audit: Path, data, refs: dict):
     return out, errors, warnings
 
 
+RISK_PRIORITY = {"statistical": 2, "test": 2, "causal": 2, "generalization": 2, "novelty": 2, "theoretical": 2,
+                 "comparison": 2, "attribution": 2, "result": 3, "method": 3, "background": 4}
+
+
 def priority(c: dict) -> int:
+    """Audit order for --max-claims: headline claims, then the claim types most often overstated,
+    then table look-ups and method facts, then background."""
     if c["tier"] == "headline":
         return 1
-    return 3 if c["type"] == "background" else 2
+    return RISK_PRIORITY.get(c["type"], 3)
 
 
 def cmd_init(ns):
@@ -381,15 +390,23 @@ def cmd_init(ns):
             print("warning: with --fatigue 1 and challenge-first, those claims can never be accepted and "
                   "will all go to the adjudicator")
         claims.sort(key=lambda c: (first_line(c["loc"]), c["id"]))
-        chosen = None
+        skip_types = sorted({t.strip() for t in (ns.skip_types or "").split(",") if t.strip()})
+        bad = set(skip_types) - set(CLAIM_TYPES)
+        if bad:
+            sys.exit(f"--skip-types: unknown type(s) {', '.join(sorted(bad))}; types are {', '.join(CLAIM_TYPES)}")
+        # a claim restated in the abstract or conclusion is audited as a headline claim
+        headline_ids = {c["restates"] for c in claims if c["restates"] and c["tier"] == "headline"}
+        skip_reason = {c["id"]: "type" for c in claims if not c["restates"] and c["type"] in skip_types}
         if ns.max_claims:
-            pool = [c for c in claims if not c["restates"]]
-            chosen = {c["id"] for c in sorted(pool, key=lambda c: (priority(c), first_line(c["loc"])))[: ns.max_claims]}
+            pool = [c for c in claims if not c["restates"] and c["id"] not in skip_reason]
+            pool.sort(key=lambda c: (1 if c["id"] in headline_ids else priority(c), first_line(c["loc"])))
+            skip_reason.update({c["id"]: "max_claims" for c in pool[ns.max_claims:]})
         L = {"version": 1, "created": now_iso(), "audit": str(audit),
              "paper": {k: v for k, v in read_json(audit / "paper" / "meta.json", default={}).items()
                        if k in ("title", "authors", "source", "arxiv_id", "n_lines", "source_type")},
              "config": {"fatigue": ns.fatigue, "batch_size": ns.batch_size, "challenge_first": policy,
-                        "external_search": bool(ns.external_search)},
+                        "external_search": bool(ns.external_search), "max_claims": ns.max_claims,
+                        "skip_types": skip_types},
              "integrity": (data.get("integrity") if isinstance(data, dict) else None) or [],
              "claims": {}, "batches": {}, "events": []}
         active = []
@@ -397,11 +414,13 @@ def cmd_init(ns):
             state = "await_prover"
             if c["restates"]:
                 state = "linked"
-            elif chosen is not None and c["id"] not in chosen:
+            elif c["id"] in skip_reason:
                 state = "skipped"
             L["claims"][c["id"]] = {"claim": c, "batch": None, "state": state, "round": 0, "challenges": 0,
                                     "changes": 0, "proofs": [], "verdicts": [], "adjudication": None,
                                     "outcome": None, "label": None, "confidence": None}
+            if state == "skipped":
+                L["claims"][c["id"]]["skip_reason"] = skip_reason[c["id"]]
             if state == "await_prover":
                 active.append(c["id"])
         for n in range(0, len(active), ns.batch_size):
@@ -415,9 +434,14 @@ def cmd_init(ns):
         by_type[c["type"]] = by_type.get(c["type"], 0) + 1
         by_tier[c["tier"]] = by_tier.get(c["tier"], 0) + 1
     cited = sorted({k for c in claims for k in c["cites"]})
+    n_type = sum(1 for v in skip_reason.values() if v == "type")
+    n_cap = sum(1 for v in skip_reason.values() if v == "max_claims")
     print(f"ledger ready: {len(claims)} claims ({len(active)} to audit in {len(L['batches'])} batches"
           f"{', ' + str(sum(1 for c in claims if c['restates'])) + ' restatements linked' if any(c['restates'] for c in claims) else ''}"
-          f"{', ' + str(len(claims) - len(active) - sum(1 for c in claims if c['restates'])) + ' skipped (max-claims)' if chosen is not None else ''})")
+          f"{f', {n_type} skipped by type ({chr(44).join(skip_types)})' if n_type else ''}"
+          f"{f', {n_cap} skipped by --max-claims' if n_cap else ''})")
+    if skip_reason:
+        print("  add skipped claims later with: ledger.py include --audit DIR (--all-skipped | --types T | --ids C1,C2)")
     print("  types: " + ", ".join(f"{k} {v}" for k, v in sorted(by_type.items(), key=lambda x: -x[1])))
     print("  tiers: " + ", ".join(f"{k} {v}" for k, v in by_tier.items()))
     print(f"  cited sources needed: {', '.join(cited) if cited else 'none'}")
@@ -1069,6 +1093,48 @@ def cmd_show(ns):
         print(f"\n-- adjudication: {a['label']}\n   {a['rationale']}")
 
 
+def cmd_include(ns):
+    """Add claims that --max-claims skipped (all of them, some types, or listed ids) as new batches."""
+    audit = Path(ns.audit).resolve()
+    with Lock(audit):
+        L = load(audit)
+        want_ids = {x.strip() for x in (ns.ids or "").split(",") if x.strip()}
+        want_types = {x.strip() for x in (ns.types or "").split(",") if x.strip()}
+        pick = [cid for cid, c in L["claims"].items() if c["state"] == "skipped" and
+                (ns.all_skipped or cid in want_ids or c["claim"]["type"] in want_types)]
+        pick.sort(key=lambda cid: (first_line(L["claims"][cid]["claim"]["loc"]), cid))
+        size = L["config"]["batch_size"]
+
+        def place(cid, b):
+            L["claims"][cid]["state"], L["claims"][cid]["batch"] = "await_prover", b
+            L["claims"][cid].pop("skip_reason", None)
+
+        rest, topped = pick, None
+        if pick and L["batches"]:
+            last = list(L["batches"])[-1]
+            members = L["batches"][last]["claims"]
+            untouched = all(L["claims"][i]["state"] == "await_prover" and not L["claims"][i]["proofs"] for i in members)
+            if untouched and len(members) < size and not any(k.startswith(f"{last}:") for k in L.get("issued", {})):
+                room = size - len(members)
+                for cid in pick[:room]:
+                    members.append(cid)
+                    place(cid, last)
+                rest, topped = pick[room:], (last, min(room, len(pick)))
+        start = len(L["batches"])
+        for n in range(0, len(rest), size):
+            b = f"B{start + n // size + 1}"
+            L["batches"][b] = {"claims": rest[n:n + size]}
+            for cid in rest[n:n + size]:
+                place(cid, b)
+        L["events"].append({"t": now_iso(), "role": "orchestrator", "included": pick})
+        save(audit, L)
+    left = sum(1 for c in L["claims"].values() if c["state"] == "skipped")
+    print(f"included {len(pick)} claim(s)"
+          + (f": {topped[1]} added to {topped[0]}, which had not started" if topped else "")
+          + (f"{', the rest' if topped else ''} in {-(-len(rest) // size)} new batch(es)" if rest else "")
+          + f"; {left} still skipped")
+
+
 def cmd_roles(ns):
     """Print the role-prompt files, wherever this install keeps them (skill folder or plugin root)."""
     for role in AGENT_FILES:
@@ -1107,7 +1173,9 @@ def main():
     p.add_argument("--batch-size", type=int, default=6)
     p.add_argument("--challenge-first", default="headline,flags",
                    help="claims that need >=1 Challenge before Accept: headline, flags, all, or none")
-    p.add_argument("--max-claims", type=int)
+    p.add_argument("--max-claims", type=int, help="audit only the N highest-priority claims")
+    p.add_argument("--skip-types", help="comma-separated claim types to leave out for now, e.g. attribution "
+                                        "when the cited sources are unavailable (add them later with include)")
     p.add_argument("--external-search", action="store_true")
     p.add_argument("--force", action="store_true")
     p.set_defaults(fn=cmd_init)
@@ -1131,6 +1199,13 @@ def main():
     p.add_argument("--audit", required=True)
     p.add_argument("--id", required=True)
     p.set_defaults(fn=cmd_show)
+    p = sub.add_parser("include")
+    p.add_argument("--audit", required=True)
+    g = p.add_mutually_exclusive_group(required=True)
+    g.add_argument("--all-skipped", action="store_true")
+    g.add_argument("--ids", help="comma-separated claim ids")
+    g.add_argument("--types", help="comma-separated claim types, e.g. result,method")
+    p.set_defaults(fn=cmd_include)
     p = sub.add_parser("roles")
     p.set_defaults(fn=cmd_roles)
     p = sub.add_parser("abandon")

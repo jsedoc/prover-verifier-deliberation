@@ -29,7 +29,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _common import http_get, loose, pdf_pages, read_json, today, write_json, write_text  # noqa: E402
+from _common import BLOCKED_HOSTS, NetworkBlocked, http_get, loose, pdf_pages, read_json, today, write_json, write_text  # noqa: E402,E501
 
 S2 = "https://api.semanticscholar.org/graph/v1"
 S2_FIELDS = "title,abstract,year,externalIds,openAccessPdf"
@@ -169,6 +169,10 @@ def _similar(a: str, b: str) -> float:
     return SequenceMatcher(None, loose(a or ""), loose(b or "")).ratio()
 
 
+def why(e: BaseException) -> str:
+    return "blocked by the network" if isinstance(e, NetworkBlocked) else type(e).__name__
+
+
 def fetch_one(audit: Path, ref: dict, use_s2: bool) -> dict:
     key, tried = ref["key"], []
 
@@ -197,7 +201,7 @@ def fetch_one(audit: Path, ref: dict, use_s2: bool) -> dict:
                 return save_source(audit, key, text, label=label, title=title, coverage="full-text", origin=origin)
             tried[-1] += " (no text layer)"
         except Exception as e:  # noqa: BLE001
-            tried[-1] += f" ({type(e).__name__})"
+            tried[-1] += f" ({why(e)})"
     if use_s2:
         try:
             if ref.get("doi"):
@@ -225,13 +229,14 @@ def fetch_one(audit: Path, ref: dict, use_s2: bool) -> dict:
                             return save_source(audit, key, text, label=label, title=paper.get("title") or title,
                                                coverage="full-text", origin=origin)
                     except Exception as e:  # noqa: BLE001
-                        tried[-1] += f" ({type(e).__name__})"
+                        tried[-1] += f" ({why(e)})"
                 if paper.get("abstract"):
                     return save_source(audit, key, "## Abstract\n" + paper["abstract"], label=label,
                                        title=paper.get("title") or title, coverage="abstract-only",
                                        origin=f"semanticscholar:{paper.get('paperId')}")
         except Exception as e:  # noqa: BLE001
-            tried.append(f"s2 error ({type(e).__name__}: {str(e)[:80]})")
+            tried.append(f"semanticscholar ({why(e)})" if isinstance(e, NetworkBlocked)
+                         else f"s2 error ({type(e).__name__}: {str(e)[:80]})")
     idx = load_index(audit)
     idx[key] = {"coverage": "unavailable", "title": title, "label": label, "tried": tried, "retrieved": today()}
     write_json(audit / "sources" / "index.json", idx)
@@ -244,7 +249,8 @@ def cmd_fetch(ns):
     if ns.keys:
         keys = [k.strip() for k in ns.keys.split(",") if k.strip()]
     elif ns.from_claims:
-        claims = read_json(audit / "claims.json", default={"claims": []})["claims"]
+        data = read_json(audit / "claims.json", default={"claims": []})
+        claims = data["claims"] if isinstance(data, dict) else data
         first = [k for c in claims if c.get("type") == "attribution" for k in c.get("cites", [])]
         rest = [k for c in claims for k in c.get("cites", [])]
         keys = list(dict.fromkeys(first + rest))
@@ -259,7 +265,12 @@ def cmd_fetch(ns):
     print(f"fetching {len(todo)} source(s)…")
     for k in todo:
         info = fetch_one(audit, refs[k], use_s2=not ns.no_s2)
-        print(f"  {k:<24} {info['coverage']:<14} {info.get('origin') or '; '.join(info.get('tried', []))[:90]}")
+        print(f"  {k:<24} {info['coverage']:<14} {info.get('origin') or '; '.join(info.get('tried', []))[:90]}",
+              flush=True)
+    if BLOCKED_HOSTS:
+        print(f"\nthe network refused connections to {', '.join(sorted(BLOCKED_HOSTS))}: this environment's network "
+              f"policy blocks them. Sources from those sites must be supplied as files: "
+              f"refs.py add --audit {ns.audit} --key KEY --file PAPER.pdf")
     cmd_status(ns)
 
 

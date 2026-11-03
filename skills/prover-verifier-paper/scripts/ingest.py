@@ -641,10 +641,10 @@ def mark_headings(lines: list) -> list:
     """Turn PDF heading lines into markdown headings. Numbered headings must follow a plausible
     sequence (1, 2, 2.1, 3 ...; letters only in the back matter), which filters table rows."""
     n = len(lines)
-    near_page = set()
+    near_page = {n - 1, n - 2}  # page numbers are footers: the lines just before a page break
     for j, l in enumerate(lines):
         if l.startswith("<!-- page"):
-            near_page.update({j - 2, j - 1, j + 1, j + 2})
+            near_page.update({j - 2, j - 1})
     cands = []  # (index, number, title, lines consumed)
     for i in range(n):
         line = lines[i].strip()
@@ -665,7 +665,11 @@ def mark_headings(lines: list) -> list:
         ok = False
         if top.isdigit():
             t = int(top)
-            ok = (last_top is None and t in (1, 2)) or (last_top is not None and t in (last_top, last_top + 1))
+            if "." in num:   # a subsection never runs ahead of its section ("2.5" right after "1 Intro")
+                ok = last_letter is None and last_top is not None and t == last_top
+            else:
+                ok = last_letter is None and (
+                    (last_top is None and t in (1, 2)) or (last_top is not None and t in (last_top, last_top + 1)))
             if ok:
                 last_top = t
         elif back_matter or (last_top is not None and last_top >= 3):
@@ -705,6 +709,13 @@ def hidden_spans(pdf_path) -> list:
     with fitz.open(str(pdf_path)) as doc:
         for pno, page in enumerate(doc, 1):
             rect = page.rect
+            # white text is visible when drawn over an image or a coloured shape (heatmap cells,
+            # figure labels), so collect those areas first
+            backdrops = [fitz.Rect(i["bbox"]) for i in page.get_image_info()]
+            for d in page.get_drawings():
+                fill = d.get("fill")
+                if fill and not all(c > 0.92 for c in fill):
+                    backdrops.append(fitz.Rect(d["rect"]))
             buf, reason_buf = [], None
             for block in page.get_text("dict").get("blocks", []):
                 for line in block.get("lines", []):
@@ -717,7 +728,9 @@ def hidden_spans(pdf_path) -> list:
                         x0, y0, x1, y1 = sp.get("bbox", (0, 0, 0, 0))
                         reason = None
                         if r > 235 and g > 235 and b > 235:
-                            reason = "white text"
+                            box = fitz.Rect(x0, y0, x1, y1)
+                            if not any(box.intersects(bd) for bd in backdrops):
+                                reason = "white text"
                         elif sp.get("size", 10) < 2.0:
                             reason = "tiny text"
                         elif x1 < rect.x0 or x0 > rect.x1 or y1 < rect.y0 or y0 > rect.y1:
@@ -923,12 +936,30 @@ def refs_from_entries(entries: list) -> list:
     return out
 
 
+def strip_margin_numbers(lines: list) -> list:
+    """Drop review-format margin line numbers: runs of 5+ consecutive 3- or 4-digit numbers (000, 001, ... 1000, 1001)."""
+    out, i, n = [], 0, len(lines)
+    num = re.compile(r"\d{3,4}")
+    while i < n:
+        if num.fullmatch(lines[i].strip()):
+            j = i
+            while j + 1 < n and num.fullmatch(lines[j + 1].strip()) and \
+                    int(lines[j + 1].strip()) == int(lines[j].strip()) + 1:
+                j += 1
+            if j - i + 1 >= 5:
+                i = j + 1
+                continue
+        out.append(lines[i])
+        i += 1
+    return out
+
+
 def process_pdf(pdf: Path) -> dict:
     pages, extractor = pdf_pages(pdf)
     lines = []
     for i, ptxt in enumerate(pages, 1):
         lines.append(f"<!-- page {i} -->")
-        lines.extend(ptxt.replace("\r", "").split("\n"))
+        lines.extend(strip_margin_numbers(ptxt.replace("\r", "").split("\n")))
     lines = mark_headings(lines)
     a, b = _ref_region(lines)
     region = lines[a:b] if a is not None else []
@@ -942,7 +973,9 @@ def process_pdf(pdf: Path) -> dict:
     title = None
     for l in lines[1:30]:
         s = l.strip()
-        if len(s) > 12 and not s.startswith("<!--") and not re.search(r"arxiv|preprint|@|\d{4}\.\d{4}", s, re.I):
+        if len(s) > 12 and not s.startswith("<!--") and not re.search(
+                r"arxiv|preprint|@|\d{4}\.\d{4}|under review|conference paper|double-blind|anonymous author|"
+                r"published as|proceedings of|workshop", s, re.I):
             title = s
             break
     text = "\n".join(lines)

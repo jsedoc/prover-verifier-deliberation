@@ -225,14 +225,33 @@ def short(s, n=160):
 USER_AGENT = "prover-verifier-paper-skill/1.0 (research paper claim audit)"
 
 
+class NetworkBlocked(RuntimeError):
+    """The network itself (usually an egress proxy) refused the connection; retrying cannot help."""
+
+
+BLOCKED_HOSTS: set = set()
+
+
+def _refused_by_network(e: BaseException) -> bool:
+    text = str(getattr(e, "reason", "") or e)
+    return ("Tunnel connection failed" in text and ("403" in text or "407" in text)) or "CONNECT tunnel failed" in text
+
+
 def http_get(url: str, timeout: int = 60, retries: int = 3) -> bytes:
-    """GET with retries, a certifi fallback for macOS Python SSL issues, and a curl fallback."""
+    """GET with retries, a certifi fallback for macOS Python SSL issues, and a curl fallback.
+    A host the network refuses (a proxy answering CONNECT with 403) raises NetworkBlocked at once and
+    is not contacted again in this process."""
     import shutil
     import ssl
     import subprocess
     import time
     import urllib.error
+    import urllib.parse
     import urllib.request
+
+    host = urllib.parse.urlparse(url).hostname or url
+    if host in BLOCKED_HOSTS:
+        raise NetworkBlocked(f"{host}: refused by the network earlier in this run")
 
     contexts = [None]
     try:
@@ -253,6 +272,9 @@ def http_get(url: str, timeout: int = 60, retries: int = 3) -> bytes:
                     raise
                 break  # 429/5xx: back off, then retry
             except (urllib.error.URLError, ssl.SSLError, TimeoutError, OSError) as e:
+                if _refused_by_network(e):
+                    BLOCKED_HOSTS.add(host)
+                    raise NetworkBlocked(f"{host}: connection refused by the network ({getattr(e, 'reason', e)})")
                 last = e
         time.sleep(2.0 * (attempt + 1))
     if shutil.which("curl"):
