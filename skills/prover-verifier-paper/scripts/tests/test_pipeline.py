@@ -342,6 +342,33 @@ class PipelineTest(unittest.TestCase):
         st = self.state()
         self.assertEqual((st["C1"]["state"], st["C1"]["batch"]), ("await_prover", "B1"))
 
+    def test_position_change_rule(self):
+        import ledger
+        sv = "Six of the seven models show the pattern in at least 3 of 15 scenarios."
+        a = {"position": "narrowed", "supported_version": sv}
+        self.assertFalse(ledger.position_changed(a, dict(a, supported_version=sv.replace("show", "exhibit"))))
+        self.assertTrue(ledger.position_changed(a, dict(a, supported_version=sv.replace("3 of 15", "4 of 15"))))
+        self.assertTrue(ledger.position_changed(a, dict(a, supported_version=sv[:-1] + ", chiefly Sonnet.",
+                                                        revised=True)))
+        self.assertFalse(ledger.position_changed(a, dict(a, revised=True)))   # reasoning revised, answer kept
+        b = {"position": "cannot_prove", "blocker": "no_evidence"}
+        self.assertTrue(ledger.position_changed(b, dict(b, blocker="source_unavailable")))
+
+    def test_recount_applies_rule_to_finished_claims(self):
+        claims = Path(self.tmp.name) / "claims.json"
+        claims.write_text(json.dumps([{"id": "C1", "text": "a", "quote": "generalizes to all languages",
+                                       "loc": "L5", "type": "generalization", "tier": "body"}]))
+        self.ledger("init", "--claims", claims)
+        L = json.loads((self.audit / "ledger.json").read_text())
+        c = L["claims"]["C1"]
+        c["proofs"] = [{"position": "narrowed", "supported_version": "Holds for 3 of 4 languages tested."},
+                       {"position": "narrowed", "supported_version": "Holds for 2 of 4 languages tested."}]
+        c.update(state="done", outcome="ANC", confidence="high", label="overclaim", changes=0)
+        (self.audit / "ledger.json").write_text(json.dumps(L))
+        self.assertIn("C1 ANC -> accept_changed", self.ledger("recount").stdout)
+        c = self.state()["C1"]
+        self.assertEqual((c["outcome"], c["confidence"], c["changes"]), ("accept_changed", "medium", 1))
+
     def test_network_refusal_fails_fast(self):
         import urllib.error
         import urllib.request

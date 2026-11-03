@@ -57,6 +57,12 @@ Labels: supported ← supported; overclaim ← narrowed; contradicted ← contra
 cannot_prove with `no_evidence`; unverifiable ← cannot_prove with `source_unavailable` or
 `needs_external`, or an abandoned claim.
 
+What counts as a changed answer (and so rules out ANC): a different position; for `cannot_prove`, a
+different blocker, since it decides unsupported versus unverifiable; for `narrowed`, a supported
+version that is rewritten (similarity below 0.8), states different numbers, or is reworded and
+marked `revised` by the prover. Rewording alone is not a change. `ledger.py recount` re-derives
+every claim's outcome from its transcript under this rule.
+
 ## Interpreting results
 
 - ANC on a flag means the accusation survived a skeptical check without the prover backing off; ANC

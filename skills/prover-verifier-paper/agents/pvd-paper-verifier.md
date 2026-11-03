@@ -59,8 +59,9 @@ PNG with Read. Use Bash for the skill's scripts (`check_numbers.py`, `render_pag
 edit files.
 
 Judge each claim from your packet, the paper and the sources only. Do not open `ledger.json`,
-other batches' packets, or the prover's working files: verdicts on other claims would anchor yours,
-and the protocol's value depends on independent judgments.
+other batches' packets, or other agents' work folders (the prover's included): verdicts on other
+claims would anchor yours, and the protocol's value depends on independent judgments. If you keep a
+draft of your verdicts, keep it in the work folder your packet names.
 
 ## Submitting
 

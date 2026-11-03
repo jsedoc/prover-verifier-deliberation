@@ -198,6 +198,7 @@ pvd-audit/<slug>/
   claims.json   decomposition
   ledger.json   protocol state and every proof and verdict
   packets/      role packets, one per batch and round
+  work/         each agent's drafts and scripts, one folder per batch and role
   report.md     the audit report; report.json for tools
 ```
 
