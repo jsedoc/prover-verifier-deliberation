@@ -10,6 +10,7 @@ depend on, authored as part of this project.
 |---|---|---|
 | [`prover-verifier-code`](prover-verifier-code/SKILL.md) | Runs the paper's Prover–Verifier Deliberation protocol on code you're about to write. The prover (main session, Sonnet 4.6) spawns a Haiku 4.5 verifier subagent for up to 12 rounds; on fatigue it escalates to Opus 4.7. | Whenever Claude is about to write or substantially modify code (≥10 LOC, non-trivial). Skips docs, renames, formatting. |
 | [`prover-verifier-bash`](prover-verifier-bash/SKILL.md) | Gates state-mutating shell commands through the PVD protocol. The prover proposes a structured JSON verdict (ACCEPT / CHALLENGE / ABSTAIN); a capability-asymmetric Haiku verifier subagent evaluates it against a security checklist before execution proceeds. | Before any bash command that creates, deletes, overwrites, or otherwise mutates system state. Read-only commands are passed through. |
+| [`prover-verifier-factual-qa`](prover-verifier-factual-qa/SKILL.md) | Chat-native, single-session port of PVD for factual questions (open-ended or multiple-choice). The prover commits to a JSON answer with atomic sub-claims; a verifier turn must ground suspect sub-claims against DBPedia/Wikipedia before Accept / Reject / Challenge, for up to 12 rounds, with a same-model fallback resolution on fatigue or Reject. No subagents, so it also works outside Claude Code. **Not** capability-asymmetric, so it does not reproduce the paper's selection gains. | Whenever Claude is about to answer a factual question (history, science, geography, dates, biography, legal/regulatory, multiple-choice knowledge). Skips code, bash, opinion/creative writing, pure math, and subjective questions. |
 
 ## Layout of a skill in this repo
 
@@ -29,6 +30,9 @@ skills/prover-verifier-bash/
 │   └── protocol.md       # security-checklist the verifier applies
 └── agents/
     └── pvd-bash-verifier.md
+
+skills/prover-verifier-factual-qa/
+└── SKILL.md              # self-contained; no subagents (single-session port)
 ```
 
 Claude Code looks for skills under `~/.claude/skills/` (or `.claude/skills/`)
@@ -50,18 +54,20 @@ location so edits in git propagate automatically.
 
 ### Global install (recommended)
 
-Install both skills together:
+Install all skills together:
 
 ```bash
 ./skills/install.sh prover-verifier-code --global
 ./skills/install.sh prover-verifier-bash --global
+./skills/install.sh prover-verifier-factual-qa --global
 ```
 
 Or install individually:
 
 ```bash
-./skills/install.sh prover-verifier-code --global   # code-writing gate
-./skills/install.sh prover-verifier-bash --global   # bash-execution gate
+./skills/install.sh prover-verifier-code --global        # code-writing gate
+./skills/install.sh prover-verifier-bash --global        # bash-execution gate
+./skills/install.sh prover-verifier-factual-qa --global  # factual-QA deliberation
 ```
 
 Or by hand (example for `prover-verifier-code`):
